@@ -1,0 +1,17 @@
+{
+  "name": "warp-drive",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest",
+    "test:watch": "jest --watchAll",
+    "dev": "nodemon maximizedSpeedOfLight.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "jest": "^27.1.1",
+    "nodemon": "^2.0.12"
+  }
+}
