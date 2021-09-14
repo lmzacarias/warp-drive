@@ -17,7 +17,6 @@ const flowResultForInjectors = (additionalTime, injectors) => {
           : Number((element.percentage + Number(additionalTime)).toFixed(2)),
     });
   });
-      console.log('🚀', result);
   return result;
 };
 
