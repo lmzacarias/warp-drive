@@ -1,10 +1,12 @@
-const usefulPercentageInjectors = (injectorA, injectorB, injectorC) => {
+const usefulPercentageInjectors = (injectors) => {
+
   const fullInyector = 100;
-  return [
-    { name: 'injectorA', percentage: fullInyector - injectorA },
-    { name: 'injectorB', percentage: fullInyector - injectorB },
-    { name: 'injectorC', percentage: fullInyector - injectorC },
-  ];
+  const arrayInyectors = injectors.map((injector, index) => {
+    return { name: `injector${index+1}`, percentage: fullInyector - injector };
+  });
+  
+  return arrayInyectors;
+  
 };
 
 module.exports = { usefulPercentageInjectors };

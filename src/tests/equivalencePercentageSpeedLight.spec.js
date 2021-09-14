@@ -6,6 +6,7 @@ describe("when you enter the percentage of the speed of light", () => {
   it("should return required flow", () => {
     expect(equivalencePercentageSpeedLight(80)).toBe(240);
     expect(equivalencePercentageSpeedLight(140)).toBe(420);
+    expect(equivalencePercentageSpeedLight(80)).toBe(240);
   });
   
 });

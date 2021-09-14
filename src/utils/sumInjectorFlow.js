@@ -1,5 +1,4 @@
 const sumInjectorFlow = (injectors) => {
-
   const sumInjectorFlowResult = injectors.reduce((memo, element) => {
     return memo + element.percentage;
   }, 0);

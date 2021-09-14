@@ -3,7 +3,7 @@ describe('when enter the additional value of the injector', () => {
     additionalValueInjector,
   } = require('../utils/additionalValueInjector');
 
-  fit('should return uptime', () => {
+  it('should return uptime', () => {
     expect(
       additionalValueInjector(240, 200, [
         { name: 'injectorA', percentage: 100 },
@@ -19,5 +19,13 @@ describe('when enter the additional value of the injector', () => {
         { name: 'injectorC', percentage: 70 },
       ])
     ).toEqual(50);
+    expect(
+      additionalValueInjector(240, 140, [
+        { name: 'injectorA', percentage: 20 },
+        { name: 'injectorB', percentage: 30 },
+        { name: 'injectorC', percentage: 40 },
+        { name: 'injectorD', percentage: 50 },
+      ])
+    ).toEqual(25);
   });
 });

@@ -13,20 +13,14 @@ const {
 } = require('./src/utils/additionalValueInjector');
 const { calculateUptime } = require('./src/utils/calculateUptime');
 
-const maximizedSpeedOfLight = (
-  injectA,
-  injectB,
-  injectC,
-  percentageLightSpeed
-) => {
+const maximizedSpeedOfLight = (injectors, percentageLightSpeed) => {
   const usefulPerecentage = usefulPercentageInjectors(
-    injectA,
-    injectB,
-    injectC,
+    injectors,
     percentageLightSpeed
   );
 
   const equivalence = equivalencePercentageSpeedLight(percentageLightSpeed);
+ 
 
   const sumInjectorFlowResult = sumInjectorFlow(usefulPerecentage);
 
@@ -40,6 +34,7 @@ const maximizedSpeedOfLight = (
     additionalValueInjectorResult,
     usefulPerecentage
   );
+ 
 
   if (resultInjectors === 'Unable to comply') {
     return 'Unable to comply';

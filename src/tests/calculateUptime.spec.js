@@ -6,5 +6,6 @@ describe('when enter the additional value of the injector', () => {
   it('should return uptime', () => {
     expect(calculateUptime(10)).toEqual(90);
     expect(calculateUptime(50)).toEqual(50);
+    expect(calculateUptime(25)).toEqual(75);
   });
 });
