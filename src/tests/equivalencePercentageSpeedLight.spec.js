@@ -7,4 +7,5 @@ describe("when you enter the percentage of the speed of light", () => {
     expect(equivalencePercentageSpeedLight(80)).toBe(240);
     expect(equivalencePercentageSpeedLight(140)).toBe(420);
   });
+  
 });

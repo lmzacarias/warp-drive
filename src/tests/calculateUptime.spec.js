@@ -3,7 +3,8 @@ describe('when enter the additional value of the injector', () => {
     calculateUptime,
   } = require('../utils/calculateUptime');
 
-  fit('should return uptime', () => {
+  it('should return uptime', () => {
     expect(calculateUptime(10)).toEqual(90);
+    expect(calculateUptime(50)).toEqual(50);
   });
 });
